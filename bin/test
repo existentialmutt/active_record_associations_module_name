@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+$: << File.expand_path("../test", __dir__)
+
+require "bundler/setup"
+require "dotenv/load"
+puts "DATABASE_URL!!!!!!!!!!!!!"
+puts ENV["DATABASE_URL"]
+require "rails/plugin/test"
