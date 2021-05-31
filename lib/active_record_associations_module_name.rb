@@ -19,22 +19,22 @@ module ActiveRecordAssociationsModuleName
   module AssociationClassMethodExtension
     def belongs_to(name, scope = nil, **options)
       options = process_module_name_option(name, options)
-      super(name, scope, options)
+      super(name, scope, **options)
     end
 
     def has_one(name, scope = nil, **options)
       options = process_module_name_option(name, options)
-      super(name, scope, options)
+      super(name, scope, **options)
     end
 
     def has_many(name, scope = nil, **options)
       options = process_module_name_option(name, options)
-      super(name, scope, options)
+      super(name, scope, **options)
     end
 
     def has_and_belongs_to_many(name, scope = nil, **options)
       options = process_module_name_option(name, options)
-      super(name, scope, options)
+      super(name, scope, **options)
     end
 
     private def process_module_name_option name, options
