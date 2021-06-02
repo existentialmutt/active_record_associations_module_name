@@ -1,5 +1,5 @@
 # ActiveRecordAssociationsModuleName
-When working with ActiveRecord models within modules, retyping the module path within association definitions can become of repetive and noisy. This extension DRYs things up by adding a `module_name` option to ActiveRecord association definitions.
+When working with ActiveRecord models within modules, retyping the module path within association definitions can become repetive and noisy. This extension makes things a little more DRY by adding a `module_name` option.
 
 ## Usage
 Specify a string `module_name` for any ActiveRecord association (belongs_to, has_many, has_one, or has_and_belongs_to_many)
